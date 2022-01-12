@@ -53,7 +53,7 @@ main{
     position: relative;
     bottom: 200px;
     height: 350px;
-    width: 550px;
+    width: 120%;
     content: '';
     background: linear-gradient(to right, #ff54a2, #ff575a);
 }
