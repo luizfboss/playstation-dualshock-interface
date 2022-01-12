@@ -35,25 +35,22 @@ header ul a:hover{
 
 /*Main*/
 main{
-    clear: both;
-    width: ;
-}
-#control{
     display: flex;
-    align-items: right;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin: auto;
 }
+#description{
+    border: 1px solid red;
+    padding-top: 400px;
 
-
-#right{
-    float: right;
-    bottom: 50%;
 }
-
 #right-grad{
-    position: relative;
-    bottom: 200px;
-    height: 350px;
-    width: 120%;
-    content: '';
     background: linear-gradient(to right, #ff54a2, #ff575a);
+    width: 500px;
+    height: 200px;
+    padding-top: 400px;
 }
+
+/*background: linear-gradient(to right, #ff54a2, #ff575a);*/
