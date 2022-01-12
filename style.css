@@ -1,0 +1,14 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header img{
+    position: absolute;
+}
+header ul{
+
+}   
+header ul a{
+    color: black;
+}
