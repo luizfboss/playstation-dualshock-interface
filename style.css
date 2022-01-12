@@ -8,70 +8,108 @@
 
 body{
     background: #D8DCE8 url('img/fundo.jpg') repeat-x;
+    width: 100%;
+}
+.container{
+    width: 100%;
 }
 
 header{
-    background-color: white;
-    width: 100%;  
-    margin: auto;
-}
-header img{
-    float: left;
+    display: flex;
+    padding-top: 10px;
+    justify-content: space-around;
 }
 header nav{
-    float: right;
-    padding: 30px 0px;
-    align-items: center;
-}   
+    padding-top: 15px;
+}
 header nav a{
-    color: black;
     text-decoration: none;
-    padding-right: 15px;
+    color: black;
+    margin-right: 20px;
 }
 header nav a:hover{
     text-decoration: underline;
 }
 
 
-/*Main*/
 main{
-    justify-content: space-between;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15%;
 }
 #description{
-    float: left;
-    padding-top: 500px;
-    padding-left: 250px;
-
+    flex-basis: 35%;
+    position: relative;
+    margin-left: 100px;
 }
-#right-grad{
-    border: 5px solid green;
-    float: right;
-    background: linear-gradient(to right, #ff54a2, #ff575a);
-    width: 600px;
-    height: 400px;
-    margin-top: 300px;
+#description h2{
+    font-size: 45px;
+}
+#description h3{
+    padding-bottom: 20px;
+}
+#description h4{
+    font-size: 25px;
+}
+#description p{
+    font-size: 20px;
+}
+#description button{
+    background: linear-gradient(to right, #fb5283, #ff3527);
+    margin-top: 15px;
+    width: 140px;
+    border: 0;
+    padding: 8px 12px;
+    color: white;
+    outline: none;
+    font-size: 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: width 0.5s;
+}
+#description button img{
+    display: none;
+}
+#description button:hover img{
+    display: block;
+}
+#description button:hover{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
+#right{
+    top: 25%;
+    width: 900px;
+}
+#controller{
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    margin-top: 20px;
+}
+
+#gradient{
+    background: linear-gradient(to right, #fb5283, #ff3527);
+    border-radius: 10px 0px 0px 10px;
+    width: 700px; 
+    height: 450px;
+    transform: translateX(287px);
+    z-index: 1;
+}
 
 footer{
-    position: relative;
-    clear: both;
-    padding: 20px;
-    background-color: white;
-    bottom: 0;
-}
-.socials{
-    float: right;
     display: flex;
-    justify-content: right;
+    justify-content: center;
+    
+    transform: translateY(130px);
 }
-.socials button{
+footer button{
+    margin-left: 20px;
+    background-color: #D8DCE8;
     border: none;
-}
-#instagram{
-    border: 5px;
-}
-#instagram:hover, #twitter:hover, #linkedin:hover{
-    cursor: pointer;
 }
