@@ -28,29 +28,25 @@ header nav a{
     text-decoration: none;
     padding-right: 15px;
 }
-header ul a:hover{
+header nav a:hover{
     text-decoration: underline;
 }
 
 
 /*Main*/
 main{
-    display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: 85%;
-    margin: auto;
 }
 #description{
-    border: 1px solid red;
+    float: left;
     padding-top: 400px;
 
 }
 #right-grad{
+    border: 5px solid green;
+    float: right;
     background: linear-gradient(to right, #ff54a2, #ff575a);
     width: 500px;
-    height: 200px;
-    padding-top: 400px;
+    height: 400px;
+    margin-top: 300px;
 }
-
-/*background: linear-gradient(to right, #ff54a2, #ff575a);*/
