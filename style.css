@@ -12,7 +12,7 @@ body{
 
 header{
     background-color: white;
-    width: 85%;  
+    width: 100%;  
     margin: auto;
 }
 header img{
@@ -39,14 +39,39 @@ main{
 }
 #description{
     float: left;
-    padding-top: 400px;
+    padding-top: 500px;
+    padding-left: 250px;
 
 }
 #right-grad{
     border: 5px solid green;
     float: right;
     background: linear-gradient(to right, #ff54a2, #ff575a);
-    width: 500px;
+    width: 600px;
     height: 400px;
     margin-top: 300px;
+}
+
+
+
+footer{
+    position: relative;
+    clear: both;
+    padding: 20px;
+    background-color: white;
+    bottom: 0;
+}
+.socials{
+    float: right;
+    display: flex;
+    justify-content: right;
+}
+.socials button{
+    border: none;
+}
+#instagram{
+    border: 5px;
+}
+#instagram:hover, #twitter:hover, #linkedin:hover{
+    cursor: pointer;
 }
