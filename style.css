@@ -84,32 +84,83 @@ main{
 
 #right{
     top: 25%;
-    width: 900px;
+    width: 1200px;
 }
 #controller{
     display: flex;
     position: absolute;
-    z-index: 1;
+    float: left;
+    z-index: 2;
     margin-top: 20px;
+    padding-right: 90px;
 }
 
 #gradient{
+    position: relative;
+    right: 0;
+    width: 800px;
     background: linear-gradient(to right, #fb5283, #ff3527);
     border-radius: 10px 0px 0px 10px;
-    width: 700px; 
     height: 450px;
-    transform: translateX(287px);
+    transform: translateX(367px);
     z-index: 1;
 }
 
 footer{
     display: flex;
     justify-content: center;
-    
+
     transform: translateY(130px);
 }
 footer button{
     margin-left: 20px;
     background-color: #D8DCE8;
     border: none;
+}
+
+@media only screen and (max-width: 700px){
+    nav ul{
+        width: 100%;
+        background: linear-gradient(to right, #fb5283, #ff3527);
+    }
+    nav ul{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul a{
+        color: white;
+    }
+    .menu-icon{
+        display: block;
+    }
+    #menulist{
+        overflow: hidden;
+    }
+
+    main{
+        flex-direction: column-reverse;
+    }
+
+    #right{
+        flex-basis: 100%;
+        margin-bottom: 50px;
+    }
+    #controller{
+        width: 80%;
+        margin-left: 300px;
+    }
+    #gradient{
+        width: 450px;
+        transform: translateX(550px);
+    }
+    #description{
+        flex-basis: 100%;
+    }
+    #description h2{
+        font-size: 35px;
+    }
+    #description h3{
+        font-size: 15px;
+    }
 }
