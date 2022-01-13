@@ -116,59 +116,7 @@ footer{
     transform: translateY(130px);
 }
 footer button{
-    margin-left: 20px;
+    margin-left: 40px;
     background-color: #D8DCE8;
     border: none;
-}
-
-@media only screen and (max-width: 700px){
-    nav{
-        display: block;
-    }
-    nav ul{
-        width: 100%;
-        background: linear-gradient(to right, #fb5283, #ff3527);
-    }
-    nav ul{
-        position: absolute;
-        display: block;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    nav ul a{
-        color: white;
-    }
-    .menu-icon{
-        display: block;
-    }
-    #menulist{
-        overflow: hidden;
-        transition: 0.5s;
-    }
-
-    main{
-        flex-direction: column-reverse;
-    }
-
-    #right{
-        flex-basis: 100%;
-        margin-bottom: 50px;
-    }
-    #controller{
-        width: 80%;
-        margin-left: 300px;
-    }
-    #gradient{
-        width: 450px;
-        transform: translateX(550px);
-    }
-    #description{
-        flex-basis: 100%;
-    }
-    #description h2{
-        font-size: 35px;
-    }
-    #description h3{
-        font-size: 15px;
-    }
 }
