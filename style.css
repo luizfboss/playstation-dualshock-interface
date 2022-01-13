@@ -30,6 +30,9 @@ header nav a{
 header nav a:hover{
     text-decoration: underline;
 }
+.menu-icon{
+    float: right;
+}
 
 
 main{
@@ -119,11 +122,15 @@ footer button{
 }
 
 @media only screen and (max-width: 700px){
+    nav{
+        display: block;
+    }
     nav ul{
         width: 100%;
         background: linear-gradient(to right, #fb5283, #ff3527);
     }
     nav ul{
+        position: absolute;
         display: block;
         margin-top: 10px;
         margin-bottom: 10px;
@@ -136,6 +143,7 @@ footer button{
     }
     #menulist{
         overflow: hidden;
+        transition: 0.5s;
     }
 
     main{
