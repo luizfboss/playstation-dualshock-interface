@@ -164,6 +164,7 @@ footer button{
     }
     #description{
         flex-basis: 100%;
+        margin-right: 50px;
     }
     #description h2{
         font-size: 35px;
